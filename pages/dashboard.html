@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Prestige Motors</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../pages/style.css">
+
+    <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet"> <!-- Boxicons for icons -->
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <header class="navbar">
+        <div class="logo">
+            <a href="index.html">Prestige Motors</a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="custom-order.html">Order a Car</a></li>
+                <li><a href="order-history.html">Order History</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div id="menu-icon" class="bx bx-menu"></div>
+    </header>
+
+    <!-- Main Content Section -->
+    <section class="dashboard">
+        <div class="dashboard-welcome">
+            <h1>Welcome, <span id="user-name">[User's Name]</span>!</h1>
+            <p>Your personalized dashboard for managing your car orders and account.</p>
+        </div>
+
+        <div class="dashboard-cards">
+            <!-- Example of a Card Section -->
+            <div class="card">
+                <h3>Your Orders</h3>
+                <p>View your past car orders.</p>
+                <a href="order-history.html" class="btn">View Orders</a>
+            </div>
+
+            <div class="card">
+                <h3>Customize Your Car</h3>
+                <p>Start a new car customization order.</p>
+                <a href="custom-order.html" class="btn">Start Customizing</a>
+            </div>
+
+            <div class="card">
+                <h3>Account Settings</h3>
+                <p>Update your personal information.</p>
+                <a href="settings.html" class="btn">Edit Profile</a>
+            </div>
+        </div>
+
+        <!-- Logout Button -->
+        <button id="logout-btn" class="btn-logout">Logout</button>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Prestide Motors. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript to handle logout -->
+    <script src="script.js"></script>
+    <script>
+        // Example of Logout functionality
+        const logoutButton = document.getElementById("logout-btn");
+
+        logoutButton.addEventListener("click", function () {
+            alert("You have been logged out!");
+            // Redirect to login page or homepage
+            window.location.href = "index.html";
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prestige Motors</title>
+    <link rel="stylesheet" href="../pages/style.css">
+
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <!-- Header Section with Flexbox Layout -->
+    <header id="header-bar">
+        <div class="header-content">
+            <img src="../assets/logo.jpg" alt="Company Logo" class="logo">
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="vehicles.html">Vehicles</a></li>
+                    <li><a href="customize.html">Customize</a></li>
+                    <li><a href="import.html">Import</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="login.html" id="login-btn">Login</a></li>
+                    <li><a href="dashboard.html">My Dashboard</a></li>
+                </ul>
+            </nav>
+    </header>
+
+    <!-- Vehicle Listings -->
+    <section id="vehicles">
+        <h2>Our Vehicles</h2>
+        <div class="vehicle-grid">
+            <!-- Vehicle Cards Container (Display in Rows) -->
+            <div class="vehicle-grid">
+                <div class="vehicle-card">
+                    <img src="../assets/car1.jpeg" alt="Car 1">
+                    <h3>AMG E63s</h3>
+                    <p>Price: $50,000</p>
+                    <button>View Details</button>
+                </div>
+                <div class="vehicle-card">
+                    <img src="../assets/car2.jpeg" alt="Car 2">
+                    <h3>Mazda CX5</h3>
+                    <p>Price: $60,000</p>
+                    <button>View Details</button>
+                </div>
+                <div class="vehicle-card">
+                    <img src="../assets/car3.jpeg" alt="Car 3">
+                    <h3> Merecedes Benz c63s AMG </h3>
+                    <p>Price: $60,000</p>
+                    <button>View Details</button>
+                </div>
+                <div class="vehicle-card">
+                    <img src="../assets/car4.jpeg" alt="Car 4">
+                    <h3> Merecedes-AMG GLE53 </h3>
+                    <p>Price: $60,000</p>
+                    <button>View Details</button>
+                </div>
+                <div class="vehicle-card">
+                    <img src="../assets/car5.jpeg" alt="Car 5">
+                    <h3> Toyota Crown </h3>
+                    <p>Price: $60,000</p>
+                    <button>View Details</button>
+                </div>
+            </div>
+
+    </section>
+
+    <!-- Modal -->
+    <div id="carModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3 id="carName"></h3>
+            <img id="carImage" src="" alt="Car">
+            <p id="carDescription"></p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="footer-content">
+            <div class="footer-contact">
+                <p>Contact us at: info@PregisteMotors.com</p>
+            </div>
+            <div class="footer-social">
+                <a href="#" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+        <div class="Info">
+            <ul>
+                <li class="footer-list_header">Offers</li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Categories</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+
+        <p>&copy; 2024 Prestige Motors . All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

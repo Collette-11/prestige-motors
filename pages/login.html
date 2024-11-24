@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Prestige Motors</title>
+    <link rel="stylesheet" href="../pages/style.css">
+</head>
+
+<body>
+    <header id="header-bar">
+        <div class="header-content">
+            <img src="../assets/logo.jpg" alt="Company Logo" class="logo">
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="vehicles.html">Vehicles</a></li>
+                    <li><a href="customize.html">Customize</a></li>
+                    <li><a href="import.html">Import</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="login.html" id="login-btn">Login</a></li>
+                    <li><a href="dashboard.html">My Dashboard</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <h1>Login</h1>
+        <form action="../server/login.php" method="POST">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <br>
+            <button type="submit">Login</button>
+        </form>
+    </main>
+
+    <footer id="contact">
+        <div class="footer-content">
+            <div class="footer-contact">
+                <p>Contact us at: info@PrestigeMotors.com</p>
+            </div>
+            <div class="footer-social">
+                <a href="#" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+        <p>&copy; 2024 Prestige Motors. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
